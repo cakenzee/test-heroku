@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myCart()">My Cart (<span id="cartNum"></span>)
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <div class="my-cart" id="myCart">
+                        <span id="no-items">No items</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="middle">
+                <img src="img/classic-tee.jpg" alt="Nature" class="responsive-img">
+            </div>
+            <div class="right">
+                <div class="col-50">
+                    <span class="tee-title"> Classic Tee </span>
+                </div>
+                <hr>
+                <div class="col-50">
+                    <span class="tee-price font-bold">$75.00</span>
+                </div>
+                <hr>
+                <p class="tee-description default-font-color">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Donec dolor sapien, scelerisque faucibus suscipit ullamcorper, vehicula ut velit. 
+                    Pellentesque et magna mi. Etiam sit amet fringilla nunc. 
+                    Vestibulum venenatis lacus vitae magna lacinia, at cursus libero aliquet. 
+                    Nunc in gravida nibh. Nulla elit sapien, tempus sed interdum non, facilisis eget ex.
+                </p>
+                <div class="size-div">
+                    <span class="size-text default-font-color font-bold">SIZE 
+                    <span class="req">*</span> <span id="selectedSize"></span> </span>
+                    <ul class="dropdown-menu choose-size" role="menu" id="ChooseSizeList">
+                        <li><a href="javascript:void(0)">S</a></li>
+                        <li><a href="javascript:void(0)">M</a></li>
+                        <li><a href="javascript:void(0)">L</a></li>
+                    </ul>
+                </div>
+                <div id="size-error-msg" class="display-none size-msg"> Please choose size. </div>
+                <div id="size-success-msg" class="display-none size-msg"> Item successfully added! </div>
+                <button onclick="addToCart()" class="btn-add">ADD TO CART</button>
+            </div>
+        </div>
+       
+
+    </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="home.js"></script>
+</body>
+
+</html>
